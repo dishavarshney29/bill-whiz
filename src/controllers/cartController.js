@@ -1,4 +1,7 @@
 const Cart = require('../models/cartModel');
+const Customer = require('../models/customerModel');
+const Product = require('../models/productModel');
+const Service = require('../models/serviceModel');
 
 exports.addToCart = async (req, res) => {
   try {
@@ -55,6 +58,7 @@ exports.addToCart = async (req, res) => {
     res.status(200).json(cart);
   } catch (err) {
     res.status(500).json({ error: 'Error adding item to cart' });
+    console.log(err)
   }
 };
 
@@ -117,6 +121,7 @@ exports.clearCart = async (req, res) => {
       res.status(200).json({ message: 'Cart cleared successfully' });
     } catch (err) {
       res.status(500).json({ error: 'Error clearing the cart' });
+      console.log(err);
     }
 };
 
@@ -137,6 +142,7 @@ const getItemDetails = async (itemId) => {
       return null; // Item not found
     } catch (err) {
       throw new Error('Error fetching item details');
+      console.log(err);
     }
 };
 
