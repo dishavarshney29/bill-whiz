@@ -20,21 +20,20 @@ mongoose
 
 // Create an account
 const accountRoutes = require('./routes/accountRoutes');
-app.use('/api/account', accountRoutes);
+app.use('/api', accountRoutes);
 
 // Fetch all products and services information with their prices
 const productRoutes = require('./routes/productRoutes');
-app.use('/api/productsAndServices', productRoutes);
+app.use('/api', productRoutes);
 
 // Add a product or service to the cart
-const cartRoutes = require('./routes/cartRoutes');
-app.use('/api/cart/add', cartRoutes);
 // Remove a product or service from the cart or clear the cart
-app.use('/api/cart', cartRoutes);
+const cartRoutes = require('./routes/cartRoutes');
+app.use('/api', cartRoutes);
 
 // View total bill / confirm the order (assuming this endpoint processes the order and clears the cart)
 const invoiceRoutes = require('./routes/invoiceRoutes');
-app.use('/api/invoices', invoiceRoutes);
+app.use('/api', invoiceRoutes);
 
 // Start the server
 const port = process.env.PORT || 3000;

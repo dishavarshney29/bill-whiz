@@ -8,5 +8,6 @@ exports.createAccount = async (req, res) => {
     res.status(201).json(savedCustomer);
   } catch (err) {
     res.status(500).json({ error: 'Error creating an account' });
+    console.log(err);
   }
 };
