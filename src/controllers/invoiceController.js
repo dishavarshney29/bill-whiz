@@ -2,6 +2,7 @@ const Cart = require('../models/cartModel');
 const Product = require('../models/productModel');
 const Service = require('../models/serviceModel');
 const Invoice = require('../models/invoiceModel');
+const Customer = require('../models/customerModel');
 
 // Helper function to calculate tax for an item
 const calculateItemTax = (item) => {
@@ -76,6 +77,7 @@ exports.viewTotalBill = async (req, res) => {
     res.status(200).json({ items: itemsWithTax, totalBill });
   } catch (err) {
     res.status(500).json({ error: 'Error fetching total bill' });
+    console.log(err);
   }
 };
 
