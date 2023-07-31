@@ -20,6 +20,7 @@ git clone https://github.com/dishavarshney29/bill-whiz.git
 6. Run Mongo on terminal at Port 27017 using command 
 ```
 mongod (for windows) 
+```
 
 7. Unpack mongo db data dump 
 ```
@@ -28,8 +29,6 @@ mongorestore --uri="mongodb://remote_host:remote_port/remote_database_name" /pat
 ```
 ***Note: For updating mongodb data dump***
 Create a mongo db data dump from your local mongo db
-mongodump --uri="mongodb://localhost:27017/billwhiz" --out=C:/Users/HP NOTEBOOK/DishaVarshney/Projects/plotline
-
 ```
 mongodump --uri="mongodb://localhost:27017/your_database_name" --out=/path/to/your/dump/directory
 ```
