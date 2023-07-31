@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "64c7a11174542294851c3391"
+  },
+  "name": "Colgate Toothpaste",
+  "price": 80
+},
+{
+  "_id": {
+    "$oid": "64c7a11174542294851c3392"
+  },
+  "name": "Lux Soap (Pack of 4)",
+  "price": 85
+},
+{
+  "_id": {
+    "$oid": "64c7a11174542294851c3393"
+  },
+  "name": "Classmate Spiral Notebook (350 Pages)",
+  "price": 150
+},
+{
+  "_id": {
+    "$oid": "64c7a11174542294851c3395"
+  },
+  "name": "Milton Sipper",
+  "price": 350
+}]

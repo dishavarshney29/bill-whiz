@@ -1,0 +1,83 @@
+[{
+  "_id": {
+    "$oid": "64c6539c5df1205eba1068a2"
+  },
+  "name": "Harshul Varshney",
+  "email": "harshul147@gmail.com",
+  "address": "D-113 (Harshul Niketan), West Vinod Nagar, Delhi-110092",
+  "phone": "9310188007"
+},
+{
+  "_id": {
+    "$oid": "64c79ffd74542294851c338c"
+  },
+  "name": "Disha Varshney",
+  "email": "dishavarshney9@gmail.com",
+  "address": "123 Main Street",
+  "phone": "9384285737"
+},
+{
+  "_id": {
+    "$oid": "64c79ffd74542294851c338d"
+  },
+  "name": "Kshitija Pandya",
+  "email": "kshitijapandya14@gmail.com",
+  "phone": "9828472749"
+},
+{
+  "_id": {
+    "$oid": "64c79ffd74542294851c338e"
+  },
+  "name": "Michael Johnson",
+  "email": "michael.johnson@example.com",
+  "address": "789 Oak Lane",
+  "phone": "9813723745"
+},
+{
+  "_id": {
+    "$oid": "64c79ffd74542294851c338f"
+  },
+  "name": "Emily Lee",
+  "email": "emily.lee@example.com",
+  "address": "101 Maple Road",
+  "phone": "9812746239"
+},
+{
+  "_id": {
+    "$oid": "64c79ffd74542294851c3390"
+  },
+  "name": "William Brown",
+  "email": "william.brown@example.com",
+  "address": "222 Cedar Street",
+  "phone": "9811937293"
+},
+{
+  "_id": {
+    "$oid": "64c7acc2b44f6ff7d1dca3f2"
+  },
+  "name": "Sandy Kumar Verma",
+  "email": "sandy.kumar@gmail.com",
+  "address": "B-113, Preet Vihar, Delhi",
+  "phone": "9829482123",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7acd4b44f6ff7d1dca3f4"
+  },
+  "name": "Sandy Kumar Verma",
+  "email": "sandy.kumar@gmail.com",
+  "address": "B-113, Preet Vihar, Delhi",
+  "phone": "9829482123",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c7acd8b44f6ff7d1dca3f6"
+  },
+  "name": "Sandy Kumar Verma",
+  "email": "sandy.kumar@gmail.com",
+  "address": "B-113, Preet Vihar, Delhi",
+  "phone": "9829482133",
+  "__v": 0
+}]

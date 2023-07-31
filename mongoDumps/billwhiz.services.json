@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "64c7a1f274542294851c3396"
+  },
+  "name": "Car cleaning",
+  "price": 650
+},
+{
+  "_id": {
+    "$oid": "64c7a1f274542294851c3397"
+  },
+  "name": "Full Body Spa",
+  "price": 2000
+},
+{
+  "_id": {
+    "$oid": "64c7a1f274542294851c3398"
+  },
+  "name": "Salon At Home",
+  "price": 400
+},
+{
+  "_id": {
+    "$oid": "64c7a1f274542294851c3399"
+  },
+  "name": "Bridal makeup",
+  "price": 5000
+},
+{
+  "_id": {
+    "$oid": "64c7a1f274542294851c339a"
+  },
+  "name": "Appliance Repair",
+  "price": 500
+}]

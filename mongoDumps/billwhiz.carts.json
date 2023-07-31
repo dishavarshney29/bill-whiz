@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "64c7e9ec1de2ced078fe48a9"
+  },
+  "customerId": {
+    "$oid": "64c79ffd74542294851c338c"
+  },
+  "itemId": {
+    "$oid": "64c7a1f274542294851c3396"
+  },
+  "itemType": "service",
+  "quantity": 1
+},
+{
+  "_id": {
+    "$oid": "64c7e9ec1de2ced078fe48aa"
+  },
+  "customerId": {
+    "$oid": "64c79ffd74542294851c338c"
+  },
+  "itemType": "service",
+  "quantity": 1
+},
+{
+  "_id": {
+    "$oid": "64c7e9fc1de2ced078fe48ab"
+  },
+  "customerId": {
+    "$oid": "64c6539c5df1205eba1068a2"
+  },
+  "itemId": {
+    "$oid": "64c7a11174542294851c3391"
+  },
+  "itemType": "product",
+  "quantity": 1
+},
+{
+  "_id": {
+    "$oid": "64c7e9fc1de2ced078fe48ac"
+  },
+  "customerId": {
+    "$oid": "64c6539c5df1205eba1068a2"
+  },
+  "itemType": "product",
+  "quantity": 1
+}]

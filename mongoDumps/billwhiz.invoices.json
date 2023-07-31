@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "64c653db5df1205eba1068a3"
+  },
+  "customerId": {
+    "$oid": "64c6539c5df1205eba1068a2"
+  },
+  "amount": 100,
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-07-30T12:13:15.859Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-30T12:13:15.859Z"
+  }
+}]
