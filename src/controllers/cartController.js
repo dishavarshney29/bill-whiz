@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const Cart = require('../models/cartModel');
 const Customer = require('../models/customerModel');
 const Product = require('../models/productModel');
@@ -40,15 +41,35 @@ exports.addToCart = async (req, res) => {
     if (!cart) {
       cart = new Cart({ customerId, items: [] });
     }
+    
+    // Find the cart associated with the customer and then find the index of the item with the given itemId
+    Cart.findOne({ customerId })
+    .then(cart => {
+        if (cart) {
+        let existingItemIndex = -1;
+        cart.products.forEach((product, index) => {
+            if (product._id.toString() === itemId) {
+            existingItemIndex = index;
+            }
+        });
 
-    // Add the item to the cart or update its quantity if it already exists
-    const existingItemIndex = cart.items.findIndex((item) => item.itemId === itemId);
+        if (existingItemIndex === -1) {
+            cart.services.forEach((service, index) => {
+            if (service._id.toString() === itemId) {
+                existingItemIndex = index;
+            }
+            });
+        }
 
-    if (existingItemIndex !== -1) {
-      cart.items[existingItemIndex].quantity += quantity;
-    } else {
-      cart.items.push({ itemId, name: itemDetails.name, quantity, price: itemDetails.price });
-    }
+        console.log("Existing item index:", existingItemIndex);
+        } else {
+        console.log("Cart not found for the customer.");
+        }
+    })
+    .catch(err => {
+        console.error('Error finding the cart:', err);
+    });
+
 
     cart.total = calculateCartTotal(cart.items);
 
@@ -75,10 +96,11 @@ exports.removeFromCart = async (req, res) => {
     // Check if the cart exists for the customer
     let cart = await Cart.findOne({ customerId });
 
-    if (!cart) {
-      return res.status(404).json({ error: 'Cart not found' });
-    }
-
+    if (!cart || !cart.items) {
+        console.log('Cart or items array not found');
+        return res.status(404).json({ error: 'Cart not found' });
+      }
+      
     // Check if the item is present in the cart
     const existingItemIndex = cart.items.findIndex((item) => item.itemId === itemId);
 
